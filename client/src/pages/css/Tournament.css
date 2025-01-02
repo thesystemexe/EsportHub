@@ -1,0 +1,60 @@
+
+.tournament-header{
+    text-align: center;
+    color: rgba(128, 128, 128, 0.42);
+}
+
+.tour-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.tournament-category {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0 auto; /* Center horizontally using margin */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center list items horizontally */
+  gap: 20px; /* Space between list items */
+}
+
+.tournament-category li {
+  font-size: 18px;
+  color: white;
+  
+  padding: 10px 20px; /* Add padding for spacing */
+  
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative; /* For the pseudo-element positioning */
+}
+
+.tournament-category li:hover {
+ /* Change background color on hover */
+  color: #00aaff; /* Change text color to blue on hover */
+}
+
+.tournament-category li::after {
+  content: ''; /* Add an empty content */
+  position: absolute;
+  bottom: -4px; /* Place the line just below the text */
+  left: 50%; /* Start at the center */
+  transform: translateX(-50%) scaleX(0); /* Initially scale to 0 */
+  width: 100%; /* Full width of the item */
+  height: 2px; /* Line height */
+  background-color: #00aaff; /* Blue color for the line */
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.tournament-category li:hover::after {
+  transform: translateX(-50%) scaleX(1); /* Expand the line on hover */
+}
+
+
+
+
+
+

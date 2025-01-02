@@ -1,0 +1,79 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 92vh;
+  padding: 40px;
+  color: #fff; /* White text for readability */
+}
+
+.left-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+
+.left-home-text h1 {
+  font-size: 5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #ffffff, #00aaff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Default mix of white and blue */
+  transition: color 0.3s ease, -webkit-text-stroke 0.3s ease;
+  cursor: pointer;
+}
+
+.left-home-text h1:hover {
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+  -webkit-text-stroke: 2px #ffffff; /* Skeleton outline effect on hover */
+}
+
+
+
+.left-home-text p {
+font-family: "PT Sans", serif;
+  font-size: 2.0rem;
+  margin-bottom: 30px;
+  color: #d0d0d0; /* Light gray text for subtle contrast */
+}
+
+.left-home-button {
+  display: flex;
+  gap: 15px;
+}
+
+.left-home-button button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color:  #00aaff; /* Bright color for call-to-action buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.left-home-button button:hover {
+  background-color: #00aaff; /* Slightly lighter on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.right-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.right-container img {
+  max-width: 45%;
+  max-height: 45%;
+  object-fit: contain;
+  margin-left: 200px;
+  
+}

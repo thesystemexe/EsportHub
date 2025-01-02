@@ -1,0 +1,144 @@
+/* General Styles */
+
+
+.login-signUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.loginSignUp-container {
+  background-color: #1f1f1f;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  width: 400px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+.loginSignUp-container h1 {
+  font-size: 2.5rem;
+  color: #00bcd4;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.loginSingUp-field {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.loginSingUp-field input {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.loginSingUp-field input::placeholder {
+  color: #8e8e8e;
+}
+
+.loginSingUp-field input:focus {
+  background-color: #333;
+  border: 1px solid #00bcd4;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.4);
+}
+
+.loginSingUp-btn button {
+  padding: 15px 25px;
+  background-color: #00bcd4;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.loginSingUp-btn button:hover {
+  background-color: #0097a7;
+  box-shadow: 0 5px 20px rgba(0, 188, 212, 0.4);
+  transform: translateY(-3px);
+}
+
+.loginSignUp-container p {
+  font-size: 1rem;
+  color: #ccc;
+  margin: 10px 0;
+}
+
+.loginSignUp-container p span {
+  color: #00bcd4;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.loginSignUp-container p span:hover {
+  color: #0097a7;
+}
+
+.loginSignUp-agree {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.loginSignUp-agree input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #00bcd4;
+}
+
+.loginSignUp-agree p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsiveness */
+@media screen and (max-width: 500px) {
+  .loginSignUp-container {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .loginSignUp-container h1 {
+    font-size: 2rem;
+  }
+
+  .loginSingUp-field input {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .loginSingUp-btn button {
+    font-size: 1rem;
+  }
+}
